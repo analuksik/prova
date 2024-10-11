@@ -1,57 +1,59 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-
-export default function Component() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-[#9e5d6b] text-white p-4">
-        <nav className="container mx-auto flex justify-between items-center text-sm">
-          <Link href="#about-us" className="hover:underline">About Us</Link>
-          <Link href="#services" className="hover:underline">Services</Link>
-          <Link href="#our-values" className="hover:underline">Our Values</Link>
-          <Link href="#state-of-industry" className="hover:underline">State of the Industry</Link>
-          <Link href="#places-we-work" className="hover:underline">Places We Work</Link>
-          <Link href="#testimonials" className="hover:underline">Testimonials</Link>
-          <Link href="#contact-us" className="hover:underline">Contact Us</Link>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Glass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Values</a></li>
+                <li><a href="#">State of the Industry</a></li>
+                <li><a href="#">Places We Work</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-      <main className="flex-grow">
-        <div className="bg-gray-100 py-20">
-          <h1 className="text-4xl font-bold text-center text-gray-700">HEADER</h1>
+    <main>
+        <div class="logo">
+            <img src="https://img.freepik.com/vetores-premium/vidro-criativo-de-letra-v-para-o-logotipo-da-empresa-letra-atraves-do-simbolo-da-fabrica-de-vidro-de-cristal_553860-1141.jpg" alt="logo da empresa">
         </div>
+        <div class="intro-container"> 
+            <section class="intro">
+                <h1>OUR FOUNDER, A TRUE LEADER, ALANAH RODRIGUEZ</h1>
+                <p>
+                    Alanah Rodriguez is best known for saying: "Nobody leaves here without learning something new, everyday."
+                    Founder and Chief Executive Officer of Clear Glass, Rodriguez is a hands-on leader who continually helps
+                    to perfect Clear Glass’ products, improving transaction friction points, and providing the best rates
+                    for clients.
+                </p>
+                <p>
+                    Rodriguez believes that by tracking and monitoring the right data, you can improve any business. "Having a 
+                    team and 100 professionals also helps," she often adds.
+                </p>
+                <p>
+                    Clear Glass improved scratch resistance by 40% in the last two years. They’ve also cut credit re-bills
+                    in half and switched to a new proprietary accounting system. She is proud of how their quality accounting
+                    is responsible for complementing the quality of Clear Glass’ products.
+                </p>
+            </section>
 
-        <div className="container mx-auto my-8 p-6 bg-[#f5f1e8]">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold text-[#9e5d6b] mb-4">OUR FOUNDER,<br />A TRUE LEADER,<br />ALANAH RODRIGUEZ</h2>
-              <p className="text-sm mb-4">
-                Alanah Rodriguez is best known for saying "Nobody leaves here without learning something new, everyday." Founder and Chief Executive Officer of Clear Glass, Rodriguez is a hands-on leader who continually helps to perfect Clear Glass' products, improving transaction friction points, and providing the best rates for clients. Rodriguez believes that by tracking and monitoring the right data, you can improve on anything in business. "Having a team of 105 professionals also helps," she often adds.
-              </p>
-              <p className="text-sm">
-                Clear Glass improved scratch resistance by 40% in the last two years. They've also cut credit rebills in half and switched to a primarily electronic accounting system. She is proudest of how the quality accounting she's responsible for complement the quality of Clear Glass' products.
-              </p>
-            </div>
-            <div className="md:w-1/2 grid grid-cols-2 gap-4">
-              {["BIOGRAPHY", "OUR OFFICE", "OUR FOUNDER", "REFERRALS", "FORMS", "HISTORY"].map((item) => (
-                <Button
-                  key={item}
-                  variant="outline"
-                  className="h-32 bg-[#9e5d6b] text-white hover:bg-[#8d5361] hover:text-white"
-                >
-                  {item}
-                </Button>
-              ))}
-            </div>
-          </div>
+            <section class="intro-links"> <!-- Links ao lado do texto -->
+                <div class="link-box"><a href="#">Biography</a></div>
+                <div class="link-box"><a href="#">Our Office</a></div>
+                <div class="link-box"><a href="#">Our Founder</a></div>
+                <div class="link-box"><a href="#">Referrals</a></div>
+                <div class="link-box"><a href="#">Forms</a></div>
+                <div class="link-box"><a href="#">History</a></div>
+            </section>
         </div>
-      </main>
-
-      <footer className="bg-[#9e5d6b] text-white p-4">
-        <div className="container mx-auto text-center">
-          © 2024 Company Name. All rights reserved.
-        </div>
-      </footer>
-    </div>
-  )
-}
+    </main>
+</body>
+</html>
